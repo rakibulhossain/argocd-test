@@ -1,0 +1,12 @@
+apiVersion: resource.pathaopay.com/v1alpha1
+kind: PayDatabaseAccessPolicy
+metadata:
+  name: {{ .Values.name }}
+  namespace: {{ .Values.namespace }}
+spec:
+  deletionPolicy: WipeOut
+  accessPolicy:
+  {{ range $path, $_ :=  .Files.Glob  "postgres/*" }}
+    {{- printf "- type: Postgres\n"}}
+    {{- $.Files.Get $path | indent 4 }}
+  {{ end }}

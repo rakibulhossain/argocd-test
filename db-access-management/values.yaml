@@ -1,0 +1,12 @@
+# Default values for db-access-management.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+name: test-access
+namespace: test
+deletionPolicy: WipeOut
+
+serviceAccount:
+  create: true
+  name: dam-sa
+  mountAsVolume: true
