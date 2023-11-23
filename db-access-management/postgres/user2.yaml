@@ -1,0 +1,6 @@
+dbName: test
+permissions:
+  - insert
+userEmail: rakibgtr2@gmail.com
+dbUserName: rakibul
+expirationTime: 2023-11-23T12:45:09Z
