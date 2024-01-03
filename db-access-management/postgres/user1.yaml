@@ -1,6 +1,8 @@
 dbName: test
 permissions:
-- insert
-userEmail: rakibgtr2@gmail.com
+  - select
+  - insert
+userEmail: rakibul.hossain@pathaopay.com
 dbUserName: hossain
-expirationTime: 2023-11-23T12:35:09Z
+delete: true
+expirationTime: 2023-12-28T13:40:30Z
